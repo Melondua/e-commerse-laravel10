@@ -80,7 +80,7 @@
             @yield('content')
         </main>
 
-        <footer class="position-absolute top-100 start-50 translate-middle">
+        <footer class="position-absolute start-50 translate-middle">
             <p class=" text-center fw-lighter">Copyright @ 2023 VavaIstrada. all right reserved</p>
         </footer>
     </div>

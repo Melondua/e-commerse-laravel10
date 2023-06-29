@@ -57,6 +57,11 @@
                         </div>
 
                     </form>
+                    <div class="col">
+                        <form action="{{route('show_product', $product)}}" method="GET">
+                            <button type="submit" class="btn btn-warning">Close</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
