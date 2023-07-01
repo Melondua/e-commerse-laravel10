@@ -22,9 +22,9 @@ class Product extends Model
         'stock',
     ];
 
-    public function orders()
+    public function transactions()
     {
-        return $this->belongsToMany(Order::class);
+        return $this->belongsTo(Order::class);
     }
 
     // bisa mempunya banyak cart
