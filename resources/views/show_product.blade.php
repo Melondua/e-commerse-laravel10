@@ -28,6 +28,7 @@
             </form>
         </div>
 
+        @if (!Auth::user()->is_admin)
         <div class="col-1">
             <form action="{{route('add_to_cart', $product)}}" method="POST">
                 @csrf
@@ -35,6 +36,8 @@
                 <button type="submit" class="btn btn-primary">add to cart</button>
             </form>
         </div>
+        @endif
+
     </div>
 </div>
 @endsection

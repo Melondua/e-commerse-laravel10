@@ -64,6 +64,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('index_order')}}">transaksi</a>
                         </li>
+                        @if (Auth::user()->is_admin)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('create_product')}}">Tambah data</a>
+                        </li>
+                        @endif
+
                         <li class="nav-item dropdown">
 
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

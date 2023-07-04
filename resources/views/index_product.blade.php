@@ -2,13 +2,10 @@
 
 @section('content')
 <div class="container">
-    <div class="row m-5">
-        <div class="col">
-            <form action="{{route('create_product')}}" method="GET">
-                <button type="submit" class="btn btn-primary">Tambah Data</button>
-            </form>
-        </div>
-    </div>
+
+
+
+
 
 
     <div class="card mb-5" style="width: 18rem;">
