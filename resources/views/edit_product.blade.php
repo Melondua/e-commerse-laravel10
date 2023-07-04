@@ -6,6 +6,13 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">edit data</div>
+                {{-- fungsi peringatan jika permintaan melebihi stock --}}
+                @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                <p> {{$error}} </p>
+                @endforeach
+
+                @endif
 
                 <div class="card-body">
                     <form action="{{ route('update_product', $product)}}" method="POST" enctype="multipart/form-data">

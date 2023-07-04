@@ -26,11 +26,12 @@
         @csrf
         <button type="submit">Delete</button>
     </form>
-    @endforeach
-
-    <form action="" method="post">
+    <form action="{{route('checkout')}}" method="post">
         @csrf
         <button type="submit">CheckOut</button>
     </form>
+    @endforeach
+
+
 </div>
 @endsection
