@@ -70,6 +70,13 @@
                         </li>
                         @endif
 
+                        @if (Auth::user()->is_admin)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('index_product')}}">Delete data</a>
+                        </li>
+
+                        @endif
+
                         <li class="nav-item dropdown">
 
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

@@ -20,10 +20,13 @@
                 @if ($order->payment_receipt)
                 <a href="{{url('storage/payment/'.$order->payment_receipt)}}">Show payment receipt</a>
                 @endif
+                @if (Auth::user()->is_admin)
             <form action="{{route('confirm_payment', $order)}}" method="post">
                 @csrf
                 <button type="submit">Confirm</button>
             </form>
+            @endif
+
             @endif
             </p>
 

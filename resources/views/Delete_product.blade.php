@@ -15,6 +15,16 @@
                         <button type="submit" class="btn btn-primary">detail</button>
                     </form>
                 </div>
+
+                <div class="col">
+
+                    <form action="{{route('delete_product', $product)}}" method="POST">
+                        @method('delete')
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+
+                </div>
             </div>
         </div>
         @endforeach

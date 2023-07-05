@@ -33,6 +33,7 @@ Route::get('/product', [ProductController::class, 'index_product'])->name('index
 
 // membuat fungsi hanya untuk admin
 Route::middleware(['admin'])->group(function () {
+
     Route::get('/product/create', [ProductController::class, 'create_product'])->name('create_product');
     Route::post('/product/create', [ProductController::class, 'store_product'])->name('store_product');
     Route::get('/product/{product}/edit', [ProductController::class, 'edit_product'])->name('edit_product');
